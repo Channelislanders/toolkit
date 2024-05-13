@@ -20,3 +20,6 @@ At this point, you will have successfully created your environment and you can s
 
 
 In order to see the full list of the dependencies we used, please take a look at the environment.yml file. While we did not use all of these dependencies, most are necessary to have in order to properly retrieve the data from the AWS cloud.
+
+## Note on Data Access
+Data is retrieved by using the Amazon Web Server Cloud. A subsetted dataset can be retrieved from the cloud following the steps listed in these notebooks. More information on this dataset can be found [here](https://ncar.github.io/cesm-lens-aws/)
