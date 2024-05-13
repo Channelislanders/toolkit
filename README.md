@@ -19,7 +19,7 @@ At this point, you will have successfully created your environment and you can s
 *Note*: make sure to replace the phrase `package_name` with the package that you are missing to ensure correct installation of that package.
 
 
-In order to see the full list of the dependencies we used, please take a look at the [environment.yml]('/environment.yml') file. While we did not use all of these dependencies, most are necessary to have in order to properly retrieve the data from the AWS cloud.
+In order to see the full list of the dependencies we used, please take a look at the [environment.yml]('environment.yml') file. While we did not use all of these dependencies, most are necessary to have in order to properly retrieve the data from the AWS cloud.
 
 ## Note on Data Access
 Data is retrieved by using the Amazon Web Server Cloud. A subsetted dataset can be retrieved from the cloud following the steps listed in these notebooks. More information on this dataset can be found [here](https://ncar.github.io/cesm-lens-aws/)
