@@ -25,16 +25,16 @@ The name of the environment does not matter. For reference to the specific proje
 
 3. After confirming the correct environment, proceed with installing the following packages:
 
-`pip install xarray`
-`pip install intake`
-`pip install intake-esm`
-`pip install requests`
-`pip install aiohttp`
-`pip install s3fs`
-`pip install zarr`
-`pip install gcsfs`
-`pip install ipykernel`
-`pip install cfgrib`
+- `pip install xarray`
+- `pip install intake`
+- `pip install intake-esm`
+- `pip install requests`
+- `pip install aiohttp`
+- `pip install s3fs`
+- `pip install zarr`
+- `pip install gcsfs`
+- `pip install ipykernel`
+- `pip install cfgrib`
 
 4. Restart the session 
 5. Choose “channelisladers” as the kernel 
