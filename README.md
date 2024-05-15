@@ -1,19 +1,73 @@
 # Toolkit on Channel Island variable observations
 
-This repository will be housing the three notebooks that will include information on:
-- How to map the area on variable of interest
-- Creating a time series for certain timeframe for variable of interest
-- Creating a vertical profile to view changes in variable of interest
+This repository will be housing three notebooks that include information on:
+- Mapping various climate variables within different experiments 
+- Creating a time series that will display trends by each climate variable according to each experiment
+- Creating a vertical profile that displays the change in depth by each variable according to each experiment
 
 ## Creating the environment
 
 In order to work with this data, it is important to have the correct packages and dependencies in your environment to properly access the data. These are the steps we recommend you take to create the correct environment.
 
-1. Open up the terminal and type this command:
-    `conda create -n your_env_name -c conda-forge dask distributed ipython netcdf4 xarray intake-esm aiohttp`
-   *Note*: Make sure to replace the phrase `your_env_name` with an environment name of your choosing before running this command
-2. After running that command once it has finished running, run this next command to activate your environment:
-    `conda activate cmip6`
+If the user is running through a server: 
 
-At this point, you will have successfully created your environment and you can start running the code featured on these notebooks. If you run into any issue with any of the packages not being properly installed, we recommend running the command `pip install package_name`.
-*Note*: make sure to replace the phrase `package_name` with the package that you are missing to ensure correct installation of that package.
+1. Open up the terminal on the server.
+*Note that the Channelislanders are using the Taylor server through Bren School.
+2. Run the following terminal commands: 
+
+`conda create -n channelislanders python=3.9 anaconda` 
+
+`conda activate channelislanders` 
+
+`python -m ipykernel install - - user - -name=channelislanders` 
+
+The name of the environment does not matter. For reference to the specific project, ‘channelislanders’ was used. The name is bolded in the instruction above. 
+
+3. After confirming the correct environment, proceed with installing the following packages:
+
+- `pip install xarray`
+- `pip install intake`
+- `pip install intake-esm`
+- `pip install requests`
+- `pip install aiohttp`
+- `pip install s3fs`
+- `pip install zarr`
+- `pip install gcsfs`
+- `pip install ipykernel`
+- `pip install cfgrib`
+
+4. Restart the session 
+5. Choose “channelisladers” as the kernel 
+6. Run the toolkit. 
+
+If the user is working locally: 
+
+1. Open the terminal locally.
+2. In the terminal window type:
+   
+`conda create -n cmip6 -c conda-forge dask distributed ipython netcdf4 xarray
+intake-esm aiohttp`
+
+This may take a few minutes depending on your computer. 
+4. In the same terminal, type: 
+
+`conda activate cmip6`
+
+6. After this, open up the notebook on the platform of choice. These notebooks were created through JupyterLab on the Taylor server, and also utilized in VisualStudio code. 
+If any of the packages are missing, an error message will appear to notify you which packages to download into the environment. 
+There are multiple ways to download packages into the terminal, and the most common is 
+
+`pip install package_name`
+
+Another way to download packages into the environment is using the 
+
+`conda search -c conda-forge package_name`
+
+Conda search also searches for the package while conda-forge installs it. This same command can also be used in the terminal for the server if any other packages need to be installed.
+
+At this point, you will have successfully created an environment and the user will run the code featured on these notebooks. 
+
+In order to see the full list of the dependencies we used, please take a look at the [environment.yml](environment.yml) file. While we did not use all of these dependencies, most are necessary to have in order to properly retrieve the data from the AWS cloud.
+
+## Note on Data Access
+Data is retrieved by using the Amazon Web Server Cloud. A subsetted dataset can be retrieved from the cloud following the steps listed in these notebooks. More information on this dataset can be found [here](https://ncar.github.io/cesm-lens-aws/)
