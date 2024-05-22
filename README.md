@@ -42,6 +42,8 @@ The name of the environment does not matter. For reference to the specific proje
 
 If the user is working locally: 
 
+We recommend downloading [Anaconda](https://www.anaconda.com/download/) if you are working on a Windows computer. It is also optional to download this program if you are working on a MAC but should not be necessary. Once Anaconda has been downloaded, please be sure to open up the Anaconda Powershell Prompt app.
+
 1. Open the terminal locally.
 2. In the terminal window type:
    
