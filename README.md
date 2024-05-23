@@ -18,9 +18,11 @@ If the user is running through a server:
 `conda create -n channelislanders python=3.9 anaconda` 
 
 `conda activate channelislanders`
+
 *Note: If you receive a message, such as "CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.", we recommend running the suggested command or just `conda init`. Once that has been done, please restart the whole session and continue the installation process by running the line below:*
 
 `python -m ipykernel install --user --name=channelislanders`
+
 Your output should say `Installed kernelspec channelislanders in ....` to correctly activate the kernal.
 
 The name of the environment does not matter. For reference to the specific project, ‘channelislanders’ was used. The name is bolded in the instruction above. 
