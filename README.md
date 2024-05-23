@@ -19,7 +19,7 @@ If the user is running through a server:
 
 `conda activate channelislanders` 
 
-`python -m ipykernel install - - user - -name=channelislanders` 
+`python -m ipykernel install --user --name=channelislanders` 
 
 The name of the environment does not matter. For reference to the specific project, ‘channelislanders’ was used. The name is bolded in the instruction above. 
 
