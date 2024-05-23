@@ -37,7 +37,7 @@ The name of the environment does not matter. For reference to the specific proje
 - `pip install cfgrib`
 
 4. Restart the session 
-5. Choose “channelisladers” as the kernel 
+5. Choose “channelislanders” as the kernel 
 6. Run the toolkit. 
 
 If the user is working locally: 
