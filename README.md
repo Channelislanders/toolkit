@@ -19,7 +19,7 @@ If the user is running through a server:
 
 `conda activate channelislanders`
 
-*Note: If you receive a message, such as "CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.", we recommend running the suggested command or just `conda init`. Once that has been done, please restart the whole session and continue the installation process by running the line below:*
+*Note: If you receive a message, such as "CommandNotFoundError: Your shell has not been properly configured to use conda activate", we recommend running the suggested command or just `conda init`. Once that has been done, please restart the whole session and continue the installation process by running the line below:*
 
 `python -m ipykernel install --user --name=channelislanders`
 
