@@ -12,14 +12,18 @@ In order to work with this data, it is important to have the correct packages an
 If the user is running through a server: 
 
 1. Open up the terminal on the server.
-*Note that the Channelislanders are using the Taylor server through Bren School.
+*Note that the Channelislanders are using the Taylor server through Bren School.*
 2. Run the following terminal commands: 
 
 `conda create -n channelislanders python=3.9 anaconda` 
 
-`conda activate channelislanders` 
+`conda activate channelislanders`
 
-`python -m ipykernel install - - user - -name=channelislanders` 
+*Note: If you receive a message, such as "CommandNotFoundError: Your shell has not been properly configured to use conda activate", we recommend running the suggested command or just `conda init`. Once that has been done, please restart the whole session and continue the installation process by running the line below:*
+
+`python -m ipykernel install --user --name=channelislanders`
+
+Your output should say `Installed kernelspec channelislanders in ....` to correctly activate the kernal.
 
 The name of the environment does not matter. For reference to the specific project, ‘channelislanders’ was used. The name is bolded in the instruction above. 
 
@@ -36,8 +40,8 @@ The name of the environment does not matter. For reference to the specific proje
 - `pip install ipykernel`
 - `pip install cfgrib`
 
-4. Restart the session 
-5. Choose “channelisladers” as the kernel 
+4. Restart the session
+5. Choose “channelislanders” as the kernel after you open the notebook
 6. Run the toolkit. 
 
 If the user is working locally: 
