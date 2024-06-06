@@ -1,9 +1,21 @@
-# Toolkit on Channel Island variable observations
+# Educational Toolkit to Navigate CESM1.0 Data
 
-This repository will be housing three notebooks that include information on:
-- Mapping various climate variables within different experiments 
-- Creating a time series that will display trends by each climate variable according to each experiment
-- Creating a vertical profile that displays the change in depth by each variable according to each experiment
+This repository contains three Jupyter notebooks focused on accessing, manipulating, and visualizaing mutliple climate variables within the Channel Islands National Marine Sanctuary (CINMS). This repository will allow for (novice) researchers and climate scientists to familiarize themselves with climate model data. The climate model data we are working with is CESM1.0. Feel free to reference the [NCAR](https://www2.cesm.ucar.edu/models/cesm1.0/). This repository is nested within the Channelislander organization created as a part of the Masters of Environmental Data Science within the Bren School of Environmental Science and Management at the University of California, Santa Barbara. 
+
+In this repository, you'll notice three separate jupyter notebooks: 
+- Mapping.ipynb
+- Vertical_profile.ipynb
+- Time_series.ipynb
+
+A data folder containing all netCDF files produced from our toolkit and and environment.yaml file. 
+
+## Structure of Data 
+
+
+## About the Data 
+Data is retrieved by using the Amazon Web Server Cloud. A subsetted dataset can be retrieved from the cloud following the steps listed in these notebooks. More information on this dataset can be found [here](https://ncar.github.io/cesm-lens-aws/)
+
+Below are instructions for creating the environment necessary to run each of the toolkits: 
 
 ## Creating the environment
 
@@ -12,14 +24,18 @@ In order to work with this data, it is important to have the correct packages an
 If the user is running through a server: 
 
 1. Open up the terminal on the server.
-*Note that the Channelislanders are using the Taylor server through Bren School.
+*Note that the Channelislanders are using the Taylor server through Bren School.*
 2. Run the following terminal commands: 
 
 `conda create -n channelislanders python=3.9 anaconda` 
 
-`conda activate channelislanders` 
+`conda activate channelislanders`
 
-`python -m ipykernel install - - user - -name=channelislanders` 
+*Note: If you receive a message, such as "CommandNotFoundError: Your shell has not been properly configured to use conda activate", we recommend running the suggested command or just `conda init`. Once that has been done, please restart the whole session and continue the installation process by running the line below:*
+
+`python -m ipykernel install --user --name=channelislanders`
+
+Your output should say `Installed kernelspec channelislanders in ....` to correctly activate the kernal.
 
 The name of the environment does not matter. For reference to the specific project, ‘channelislanders’ was used. The name is bolded in the instruction above. 
 
@@ -36,11 +52,13 @@ The name of the environment does not matter. For reference to the specific proje
 - `pip install ipykernel`
 - `pip install cfgrib`
 
-4. Restart the session 
-5. Choose “channelisladers” as the kernel 
+4. Restart the session
+5. Choose “channelislanders” as the kernel after you open the notebook
 6. Run the toolkit. 
 
 If the user is working locally: 
+
+We recommend downloading [Anaconda](https://www.anaconda.com/download/) if you are working on a Windows computer. It is also optional to download this program if you are working on a MAC but should not be necessary. Once Anaconda has been downloaded, please be sure to open up the Anaconda Powershell Prompt app.
 
 1. Open the terminal locally.
 2. In the terminal window type:
@@ -69,5 +87,16 @@ At this point, you will have successfully created an environment and the user wi
 
 In order to see the full list of the dependencies we used, please take a look at the [environment.yml](environment.yml) file. While we did not use all of these dependencies, most are necessary to have in order to properly retrieve the data from the AWS cloud.
 
-## Note on Data Access
-Data is retrieved by using the Amazon Web Server Cloud. A subsetted dataset can be retrieved from the cloud following the steps listed in these notebooks. More information on this dataset can be found [here](https://ncar.github.io/cesm-lens-aws/)
+Contributors
+
+Project manager: Patricia Park
+
+Communications manager: Olivia Holt
+
+Data Manager/ Product Leader: Diana Navarro
+
+Client/Faculty Advisor: Samantha Stevenson
+
+
+
+
