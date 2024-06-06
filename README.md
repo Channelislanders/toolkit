@@ -127,13 +127,13 @@ In order to see the full list of the dependencies we used, please take a look at
 
 ## Contributors
 
-**Project manager:** Patricia Park
+**Project manager:** [Patricia Park](https://github.com/p-park6)
 
-**Communications manager:** Olivia Holt
+**Communications manager:** [Olivia Holt](https://github.com/olleholt)
 
-**Data Manager/ Product Leader:** Diana Navarro
+**Data Manager/ Product Leader:** [Diana Navarro](https://github.com/dianaxnav)
 
-**Client/Faculty Advisor:** Samantha Stevenson
+**Client/Faculty Advisor:** [Samantha Stevenson](https://climate-datalab.org)
 
 ## References of Data:
 
