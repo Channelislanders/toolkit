@@ -12,7 +12,7 @@ A data folder containing all netCDF files produced from our toolkit and and envi
 ## Structure
 
 The structure of this repository is as follows:
-
+```
 toolkit
 │  .DS_store
 │  .gitignore
@@ -44,7 +44,7 @@ toolkit
                |   subset_TEMP_20C.nc
                |   subset_TEMP_RCP85.nc
       
-      
+```  
 
 ## About the Data 
 Data is retrieved by using the Amazon Web Server Cloud. A subsetted dataset can be retrieved from the cloud following the steps listed in these notebooks. More information on this dataset can be found [here](https://ncar.github.io/cesm-lens-aws/)
