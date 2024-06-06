@@ -9,8 +9,42 @@ In this repository, you'll notice three separate jupyter notebooks:
 
 A data folder containing all netCDF files produced from our toolkit and and environment.yaml file. 
 
-## Structure of Data 
+## Structure
 
+The structure of this repository is as follows:
+
+toolkit
+│  .DS_store
+│  .gitignore
+|  LICENSE
+|  Mapping.ipynb
+|  README.md
+|  Time_series.ipynb
+|  Vertical_profile.ipynb
+|  environment.yml
+|  toolkit.Rproj
+└───data
+      └─── cinms_py 
+               |   cinms_py.dbf
+               |   cinms_py.html
+               |   cinms_py.kmz
+               |   cinms_py.prj
+               |   cinms_py.sbn
+               |   cinms_py.sbx
+               |   cinms_py.shp
+               |   cinms_py.shp.xml
+               |   cinms_py.shx
+               |   cinms_py.xml
+      └─── time_series
+               |   20C_rcp85_o2.nc
+               |   20C_rcp85_salt.nc
+               |   20C_rcp85_sst.nc
+               |   20C_rcp85_temp.nc
+      └─── vertical_profile
+               |   subset_TEMP_20C.nc
+               |   subset_TEMP_RCP85.nc
+      
+      
 
 ## About the Data 
 Data is retrieved by using the Amazon Web Server Cloud. A subsetted dataset can be retrieved from the cloud following the steps listed in these notebooks. More information on this dataset can be found [here](https://ncar.github.io/cesm-lens-aws/)
