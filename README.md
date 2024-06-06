@@ -45,6 +45,11 @@ toolkit
                |   subset_TEMP_RCP85.nc
       
 ```  
+A few notes on the data folder and some of its contents. 
+
+The `cinms_py` folder contains the contents necessary to plot the shape file over the Channel Islands National Marine Sanctuary on the mapping notebook. This would not be necessary if you plan on the using the educational toolkit to subset a different area. 
+
+The folder containing `time_series` and `vertical_profile` holds all time series netCDF file outputs that were created.
 
 ## About the Data 
 Data is retrieved by using the Amazon Web Server Cloud. A subsetted dataset can be retrieved from the cloud following the steps listed in these notebooks. More information on this dataset can be found [here](https://ncar.github.io/cesm-lens-aws/)
