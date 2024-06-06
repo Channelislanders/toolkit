@@ -125,7 +125,7 @@ At this point, you will have successfully created an environment and the user wi
 
 In order to see the full list of the dependencies we used, please take a look at the [environment.yml](environment.yml) file. While we did not use all of these dependencies, most are necessary to have in order to properly retrieve the data from the AWS cloud.
 
-Contributors
+## Contributors
 
 **Project manager:** Patricia Park
 
