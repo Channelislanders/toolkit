@@ -127,15 +127,15 @@ In order to see the full list of the dependencies we used, please take a look at
 
 Contributors
 
-Project manager: Patricia Park
+**Project manager:** Patricia Park
 
-Communications manager: Olivia Holt
+**Communications manager:** Olivia Holt
 
-Data Manager/ Product Leader: Diana Navarro
+**Data Manager/ Product Leader:** Diana Navarro
 
-Client/Faculty Advisor: Samantha Stevenson
+**Client/Faculty Advisor:** Samantha Stevenson
 
-References of Data:
+## References of Data:
 
 Office of National Marine Sanctuaries, [06/06/2024]: Channel Islands National Marine Sanctuary Boundary (polygons), https://www.fisheries.noaa.gov/inport/item/40040., Access Constraints: None, Use Constraints: NOT FOR LEGAL USE, Distribution Liability: Digital boundary files are available for public consumption from the Office of National Marine Sanctuaies in hard copy or digital formats. See Distributor Contact Informationfor contact details.
 
